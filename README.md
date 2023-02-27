@@ -16,7 +16,7 @@ With Docker
 
 ```bash
 docker build -t time-series-example .
-docker run -p 8000:8000 time-series-example
+docker run -d -p 8000:8000 --name time-series-example time-series-example
 ```
 
 *but you need NBEATSModel to be saved in data/models/nbeats_model
